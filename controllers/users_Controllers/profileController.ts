@@ -34,6 +34,12 @@ class ProfileController {
               populate: {
                 path: "comments",
               },
+            })
+            .populate({
+              path: "exams",
+              populate: {
+                path: "subjectId units",
+              },
             }));
 
         if (!entity) {
