@@ -38,6 +38,7 @@ export interface IMeanQuestion extends Document {
   text: string;
   type:"means";
   correct: string;
+  word: string;
   firstAnswer: string;
   secondAnswer: string;
   thirdAnswer: string;
