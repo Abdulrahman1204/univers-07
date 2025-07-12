@@ -19,6 +19,10 @@ const MQuestionSchema: Schema<IMeanQuestion> = new Schema(
       type: String,
       default: "means"
     },
+    work:{
+      type: String,
+      required: true
+    },
     correct: {
       type: String,
       required: true,
