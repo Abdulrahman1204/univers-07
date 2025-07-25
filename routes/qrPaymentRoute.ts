@@ -8,7 +8,7 @@ const router = express.Router();
 router.get(
   "/generate-qr/:type/:id",
   verifyToken,
-  checkRole(["superAdmin", "admin"]),
+  checkRole(["superAdmin", "admin", "sales"]),
   qrPymentController.generatePaymentQr
 );
 
